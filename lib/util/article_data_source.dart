@@ -8,9 +8,10 @@ import '../controller/controller.dart';
 class ArticleDataSource extends DataTableSource {
   final List<Articles> _articles;
   final Function _goTo;
+  final Function _articleInfo;
   final Controller articleController = Get.find<Controller>();
 
-  ArticleDataSource(this._articles, this._goTo);
+  ArticleDataSource(this._articles, this._goTo, this._articleInfo);
 
   @override
   DataRow? getRow(int index) {
@@ -51,6 +52,15 @@ class ArticleDataSource extends DataTableSource {
               // You can implement the delete functionality here
               Get.find<Controller>().deleteArticle(
                   article.productId!); //Create a delete method for articles
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.info),
+            onPressed: () {
+              // Trigger action to edit the category
+              // You can implement the edit functionality here
+              articleController.getArticleForRelatedProduct(article);
+              _articleInfo();
             },
           ),
           IconButton(

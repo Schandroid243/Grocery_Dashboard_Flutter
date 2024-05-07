@@ -98,7 +98,7 @@ class _ListArticleMobileState extends State<ListArticleMobile> {
           ],
           source: ArticleDataSource(articles, () {
             Navigator.of(context).pushNamed("/add-related-product");
-          }),
+          }, () {}),
         ),
       ),
     );

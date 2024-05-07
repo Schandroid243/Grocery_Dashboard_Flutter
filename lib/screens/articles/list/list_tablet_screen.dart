@@ -98,7 +98,7 @@ class _ListArticleTabletState extends State<ListArticleTablet> {
           ],
           source: ArticleDataSource(articles, () {
             Navigator.of(context).pushNamed("/add-related-product");
-          }),
+          }, () {}),
         ),
       ),
     );

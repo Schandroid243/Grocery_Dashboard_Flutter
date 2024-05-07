@@ -106,7 +106,7 @@ class _ListArticleDeskTopState extends State<ListArticleDeskTop> {
           ],
           source: ArticleDataSource(articles, () {
             Navigator.of(context).pushNamed("/add-related-product");
-          }),
+          }, () {}),
         ),
       ),
     );
