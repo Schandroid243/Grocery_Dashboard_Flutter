@@ -1,6 +1,6 @@
 # Grocery Dashboard Flutter
 
-A **responsive admin dashboard** built with Flutter for managing the Grocery e-commerce platform.  
+A **responsive admin dashboard** built with Flutter for managing the Ecomly e-commerce platform.  
 It provides administrators with tools to manage products, users, and orders, with a clean architecture and API integration.  
 
 ---
